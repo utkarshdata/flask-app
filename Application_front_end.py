@@ -44,15 +44,13 @@ df['Number_of_Applicants'] = stdscale.fit_transform(df[['Number_of_Applicants']]
 
 y = df.iloc[:, 1].values
 
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size = 0.20)
+#X_train, X_test, y_train, y_test = train_test_split(x, y, test_size = 0.20)
 
 from sklearn.linear_model import Ridge
-rdg = Ridge(alpha=0.5)
-mdl = rdg.fit(X_train, y_train)
-y_pred = mdl.predict(X_test)
-y_pred_train = mdl.predict(X_train)
-
+mdl = Ridge(alpha=0.5)
+mdl.fit(X, y)
+mdl.score(X, y)
 
 pickle.dump(mdl, open('mdl.pkl','wb'))
