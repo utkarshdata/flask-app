@@ -17,7 +17,7 @@ data = {'School_Stanford': 1,
 'School_Duke Fuqua': 0,
 'School_Michigan Ross': 0,
 'School_Darden': 0,
-       
+
  'Year_2017': 1,
 'Year_2018': 0,
 'Year_2019': 0,
@@ -27,7 +27,6 @@ data = {'School_Stanford': 1,
 
 data = json.dumps(data)
 
-send_request = requests.post(url,data)
+send_request = requests.post(heroku_url,data)
 print(send_request)
 print(send_request.json())
-
