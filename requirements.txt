@@ -28,6 +28,7 @@ defusedxml
 dnspython==1.16.0
 entrypoints==0.3
 Flask==2.0.1
+gunicorn==19.9.0
 hyperlink
 idna==2.10
 importlib-metadata
