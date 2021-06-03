@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = 'http://192.168.1.1:5000'
+heroku_url = 'https://gradwise-front-end.herokuapp.com/'
 
 data = {'Pclass': 3
       , 'Age': 2
