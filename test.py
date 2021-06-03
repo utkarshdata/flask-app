@@ -29,4 +29,4 @@ data = json.dumps(data)
 
 send_request = requests.post(heroku_url,data)
 print(send_request)
-print(send_request.json())
+#print(send_request.json())
